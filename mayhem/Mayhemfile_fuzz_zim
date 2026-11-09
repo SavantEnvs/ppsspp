@@ -1,0 +1,9 @@
+project: savantenvs/ppsspp
+target: fuzz_zim
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_zim/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_zim
+    libfuzzer: true
+    timeout: 10

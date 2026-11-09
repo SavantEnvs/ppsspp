@@ -1,0 +1,7 @@
+# Build artifacts: build.sh recreates all of these. Keep .git (the image carries the full history).
+mayhem/build
+/fuzz_*
+/fuzz_*-standalone
+**/*.o
+**/*.a
+ctrf-report.json
